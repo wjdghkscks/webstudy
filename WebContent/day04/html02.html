@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> HTML table - rowspan, colspan (셀 합치기) </title>
+
+<style type="text/css">
+	table, th, td {
+		border: 1px solid black;
+	}
+	table {
+		margin: auto;
+		width: 80%;
+	}
+	td {
+		text-align: center;
+	}
+</style>
+
+</head>
+<body>
+
+<!-- 
+
+- rowspan: 행 합치기
+- colspan: 열 합치기
+
+- 병합 실행 시 왼쪽 - 위쪽의 데이터가 살아남음 
+
+ -->
+
+<table>
+
+	<caption style="padding: 5px">테이블</caption>
+	
+	<thead>
+		<tr>
+			<th>1행 1열</th>
+			<th>1행 2열</th>
+			<th>1행 3열</th>
+			<th>1행 4열</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>2행 1열</td>
+			<td>2행 2열</td>
+			<td>2행 3열</td>
+			<!-- rowspan: 행 병합 -->
+			<td rowspan="3">2행 4열</td>
+		</tr>
+		<tr>
+			<td>3행 1열</td>
+			<!-- rowspan과 colspan을 동시에 사용 -->
+			<td rowspan="2" colspan="2">3행 2열</td>
+		</tr>
+		<tr>
+			<td>4행 1열</td>
+		</tr>
+	</tbody>
+	
+	<tfoot>
+		<tr>
+			<!-- colspan: 열 병합 -->
+			<td colspan="4">5행 1열</td>
+		</tr>
+	</tfoot>
+	
+</table>
+
+<br>
+<hr>
+
+<table>
+	
+	<caption style="padding: 5px">테이블 연습</caption>
+	
+	<thead>
+		<tr>
+			<th>방 이 름</th>
+			<th>대 상</th>
+			<th>크 기</th>
+			<th>가 격</th>
+		</tr>
+	</thead>
+	
+	<tbody>
+		<tr>
+			<td>유채방</td>
+			<td>여성</td>
+			<td rowspan="3">4인실</td>
+			<td rowspan="4">1인 20,000원</td>
+		</tr>
+		<tr>
+			<td rowspan="2">동백방</td>
+			<td>동성</td>
+		</tr>
+		<tr>
+			<td>가족</td>
+		</tr>
+		<tr>
+			<td>천혜향방</td>
+			<td>누구나</td>
+			<td>2인실</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+</body>
+</html>

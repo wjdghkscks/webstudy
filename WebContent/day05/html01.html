@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> HTML lists </title>
+</head>
+<body>
+
+<!-- 
+
+lists
+
+1. <ul> unordered list
+- 순서가 없는 리스트
+- <ul> 내에 <li> 태그를 추가하여 목록 작성
+- style = "list-style-type:value"
+	>> value: disc(default), circle, square
+
+2. <ol> ordered list
+- 순서가 있는 리스트
+- <ol> 내에 <li> 태그를 추가하여 목록 작성
+- style = "list-style-type:value"
+
+3. <dl> definition list
+- 정의 목록 리스트
+- 사전이나 정의 문구에 사용
+- <dl> 내에 <dt>로 제목을, <dd>로 내용을 작성
+
+ -->
+ 
+<ul>
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ul>
+
+<hr>
+
+<ul style="list-style-type: disc;">
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ul>
+
+<ul style="list-style-type: circle;">
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ul>
+
+<ul style="list-style-type: square;">
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ul>
+
+<hr>
+
+<ol>
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+
+<ol style="list-style-type: lower-roman;">
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+
+<ol style="list-style-type: lower-alpha;">
+	<li>coffee</li>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+
+<hr>
+
+<ol>
+	<li>coffee</li>
+		<ul>
+			<li>americano</li>
+				<ul>
+					<li>tall</li>
+					<li>grande</li>
+				</ul>
+			<li>vanila latte</li>
+		</ul>
+	<li>tea</li>
+	<li>milk</li>
+</ol>
+
+<hr>
+
+<dl>
+	<dt>키보드</dt>
+	<dd>표준 입력 장치를 말한다.</dd>
+	<dt>모니터</dt>
+	<dd>표준 출력 장치를 말한다.</dd>
+	<br>
+	<dt>요한복음 3장 16절</dt>
+	<dd>하나님이 세상을 이처럼 사랑하사 독생자를 주셨으니,</dd>
+	<dd>이는 저를 믿는자마다 멸망하지 않고 영생을 얻게 하려 하심이라.</dd>
+</dl>
+
+
+</body>
+</html>

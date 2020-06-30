@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title> HTML Block and Inline Elements </title>
+<style type="text/css">
+	h2 {
+		text-align: center;
+	}
+</style>
+</head>
+
+<body>
+
+<!-- 
+
+* block
+- 항상 새 라인에서 시작하여, 전체 너비를 차지함
+- block elements
+
+	 <div>, <p>, <pre>, <dl>, <dt>, <h1>-<h6>, <form>, <table>, <tfoot>, <ul>,
+	 <address>, <article>, <aside>, <blockquote>, <canvas>, <dd>, <fieldset>,
+	 <figcaption>, <figure>, <footer>, <header>, <hr>, <li>,
+	 <main>, <nav>, <noscript>, <ol>, <section>, <video>
+	 
+* inline
+- 새 줄에서 시작하지 않으며, 필요한 만큼만 너비를 차지함
+- inline elements
+
+	<span>, <b>, <em>, <i>, <strong>, <sub>, <sup>,
+	<br>, <a>, <big>, <button>, <img>,
+	<input>, <label>, <map>, <textarea>,
+	<script>, <select>, <abbr>, <acronym>, <object>, <output>,
+	<q>, <samp>, <small>, <time>, <tt>, <var>, <bdo>, <cite>, <code>, <dfn>, <kbd>	
+	 
+ -->
+
+<div style="border: 1px solid gray">Hello World!</div>
+<span style="border: 1px solid #777">Hello World!</span>
+<br>
+
+<!-- 
+* <div>
+- 다른 요소를 포함하는 컨테이너 역할 및 영역을 나누는 역할을 하는 태그
+ -->
+
+<div style="background-color: #4567cc; color: white; padding: 1px 30px;">
+	<h2>박정희의 마지막 점심 '소복식당'</h2>
+	<p>
+	‘소복식당’은 충남 예산에 위치해 있습니다. 
+	질 좋은 소고기로 만든 달달한 갈비는 이곳의 주력 메뉴이죠. 
+	청와대에도 맛집으로 소문난 터라 역대 대통령들도 한번씩 방문한 곳입니다. 
+	그 중에서도 고 박정희 전대통령이 제일 먼저 이곳을 발견했는데요, 
+	그는 식사 후 포장을 요구할정도로 소복갈비에 만족했다고 합니다. 
+	한편 박정희가 사망하기 전 들른 마지막 점심 식당으로도 잘 알려져 있습니다.
+	</p>
+</div>
+
+<div style="width: 450px; background-color: #26bb99; color: white; padding: 1px 30px;">
+	<h2>박정희의 마지막 점심 '소복식당'</h2>
+	<p>
+	‘소복식당’은 충남 예산에 위치해 있습니다. 
+	질 좋은 소고기로 만든 달달한 갈비는 이곳의 주력 메뉴이죠. 
+	청와대에도 맛집으로 소문난 터라 역대 대통령들도 한번씩 방문한 곳입니다. 
+	그 중에서도 고 박정희 전대통령이 제일 먼저 이곳을 발견했는데요, 
+	그는 식사 후 포장을 요구할정도로 소복갈비에 만족했다고 합니다. 
+	한편 박정희가 사망하기 전 들른 마지막 점심 식당으로도 잘 알려져 있습니다.
+	</p>
+</div>
+
+<!-- 
+* 보통 인라인 레벨은 block 안에 사용되는 경우가 많음
+ -->
+<br>
+<h1>My <span style="color: #bd3547;">Important</span> Heading</h1>
+
+</body>
+</html>

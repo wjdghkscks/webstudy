@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>HTML ID Attribute</title>
+<style type="text/css">
+	
+	h2 {
+		background-color: #559964;
+		color: white;
+	}
+	
+	#test {
+		color: orange;
+	}
+	
+	#test2 {
+		color: pink;
+	}
+	
+</style>
+</head>
+
+<body>
+
+<!-- 
+* <id>
+- 단 하나의 요소를 선택할 때 사용
+- id 이름은 절대 겹칠 수 없음
+- <head>의 <style> 에서 스타일을 지정하며, 샵(#)으로 id를 구분
+- CSS, jQuery, ajax 에서 사용되는 선택자 중 하나
+- JavaScript 에서 document.getElementById(""); 으로 선택 가능
+
+ -->
+
+<h2 id="test">ICT 인재 개발원</h2>
+<h2>ICT 인재 개발원</h2>
+<h2><span id="test2">ICT</span> 인재 개발원</h2>
+<h2>ICT 인재 개발원</h2>
+<h2>ICT 인재 개발원</h2>
+
+
+</body>
+</html>

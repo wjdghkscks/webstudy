@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title> HTML image map </title>
+</head>
+<body>
+
+<!-- 
+
+image map
+
+- 하나의 이미지에 구역을 나누어, 여러가지 링크를 생성
+
+1) <img> 태그 안에 usemap 속성 부여
+2) map 태그 안에 area 태그를 만들어서 영역 설정
+   영역은 사각형(rect), 원(circle), 자유형(poly) 형태로 설정 가능
+   사각형	: <area shape="rect" coords="시작x,시작y,끝x,끝y">
+   원		: <area shape="circle) coords="중심x,중심y,반지름">
+
+ -->
+<a href="https://www.w3schools.com/">
+<img alt="workplace" src="../images/workplace.jpg" usemap="#laptop">
+</a>
+<map name="laptop">
+	<area shape="rect" coords="30,40,275,350" href="https://www.naver.com">
+	<area shape="rect" coords="290,170,335,245" href="https://www.daum.net">
+	<area shape="circle" coords="335,300,45" href="https://www.google.com">
+</map>
+
+</body>
+</html>
