@@ -70,6 +70,9 @@
 
  -->
 
+	<fieldset>
+	<legend> 정보 입력</legend>
+
 	<form action="html02.html" method="get">
 	
 	<p> <label> 아이디 : </label>
@@ -120,21 +123,59 @@
 	
 	<!-- datalist 사용 시 먼저 list="이름지정" 작성 필요-->
 	<!-- datalist 사용 시 name 및 placeholder 는 list 뒤에 작성하며, value는 사용하지 않음 -->
-	<p> 브라우저 :
-	<input list="browsers" name="browsers" placeholder="선택하세요.">
-	<datalist id="browsers">
-		<option>크롬</option>
-		<option>익스플로러</option>
-		<option>파이어폭스</option>
-		<option>사파리</option>
-		<option>기타</option>
-	</select>
 	
-	</p>
+		<p> 브라우저 :
+		<input list="browsers" name="browsers" placeholder="선택하세요.">
+		<datalist id="browsers">
+			<option>크롬</option>
+			<option>익스플로러</option>
+			<option>파이어폭스</option>
+			<option>사파리</option>
+			<option>기타</option>
+		</p>
+		
+		<!-- 하나의 이름에 여러개 값을 전달 >> 받는 곳에서는 배열로 처리 -->
+		<p> 취미 : <input type="checkbox" name="hobby" value="운동">운동
+				   <input type="checkbox" name="hobby" value="게임">게임
+				   <input type="checkbox" name="hobby" value="영화">영화
+				   <input type="checkbox" name="hobby" value="독서">독서
+		</p>		   
+		
+		<p> 프로그래밍 : <select name="program" multiple size="3">
+							<option>Java</option>
+							<option>Oracle</option>
+							<option>HTML&CSS</option>
+							<option>Servlet</option>
+							<option>JSP</option>
+							<option>Android</option>
+						 </select>
+		</p>
+		
+		<!-- 파일 업로드 할 때 사용 -->
+		<p> 파일 : <input type="file" name="file"> </p>
+		<p> 컬러 : <input type="color" name="color"> </p>
+		<p> 날짜 : <input type="date" name="date"> </p>
+		<p> 시간 : <input type="time" name="time"> </p>
+		<p> 범위 : <input type="range" name="range"> </p>
+		
+		<!-- pattern으로 조건 부여 -->
+		<p> 전화 : <input type="tel" pattern="[0-9]{11}" required> </p>
+		
+		<hr>
+		
+		<!-- textarea -->
+		<p style="text-align: center;"> 자기소개서<br><br>
+			<textarea rows="10" cols="100"></textarea>
+		</p>	
+		
+		<!-- hidden 은 화면에 보이지 않게 특정한 값을 넘길 때 사용 -->
+		<input type="hidden" name="page" value="108">
+		
+	</fieldset>
 	
 	<!-- reset과 submit의 value는 생성된 버튼의 텍스트를 의미함 -->
 	<p><input type="reset" value="취소"></p>
-	<p><input type="submit" value="전송"></p>
+	<p><input type="submit" value="확인"></p>
 	
 	</form>
 
