@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HTML video</title>
+</head>
+
+<body>
+
+<!-- 
+
+- controls	: 컨트롤러 보이게 하기
+- autoplay	: 자동 실행
+- loop		: 반복 처리
+- muted		: 음소거
+
+ -->
+ 
+<video src="../multi/video.mp4" controls muted></video>
+
+<hr>
+
+<video width="480" height="360" controls autoplay muted>
+	<source src="../multi/video.mp4">
+</video>
+
+<hr>
+
+<audio src="../multi/audio.mp3" controls></audio>
+
+<hr> 
+
+<audio controls>
+	<source src="../multi/audio.mp3">
+</audio>
+
+<hr>
+
+<!-- youtube 영상 추가 시 <iframe> 사용 -->
+<iframe width="720" height="480"
+	src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+</iframe>
+
+</body>
+
+</html>
