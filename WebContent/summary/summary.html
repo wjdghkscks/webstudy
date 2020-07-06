@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>HTML</title>
+
+<style type="text/css">
+
+/* 초기화 */
+	* {
+		margin: 10px;
+	}
+	body {
+		font-family: GmarketSansLight;
+	}
+	li {
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+	}
+	img {
+		border: 0;
+	}
+
+/* 웹 폰트 */
+	@font-face {
+		font-family: 'GmarketSansBold';
+		src:
+			url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff')
+			format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	@font-face {
+		font-family: 'GmarketSansLight';
+		src:
+			url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff')
+			format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	
+/* 헤더 */
+	.header {
+		/* 중앙 정렬 */
+		margin: 0 auto;
+		
+		/* 절대 좌표 */
+		height: 200px;
+		position: relative;
+	}
+
+	.title {
+		font-family: 'GmarketSansBold';
+		position: relative;
+		text-align: center;
+	}
+	
+	.nav {
+		position: relative;
+		text-align: right;
+		right: 0;
+		bottom: 10px;
+	}
+	
+	.context {
+		font-family: 'GmarketSansLight';
+		width: 500px;
+		margin: 10px 30px;
+	}
+	
+	
+</style>
+
+</head>
+
+<body>
+
+	<header class = "header">
+		<div class = "title">
+			<h1>HTML SUMMARY</h1>
+		</div>
+		
+		<nav class = "nav">
+			<ul>
+				<li><a href="#">nav1</a></li>
+				<li><a href="#">nav2</a></li>
+				<li><a href="#">nav3</a></li>
+				<li><a href="#">nav4</a></li>
+				<li><a href="#">nav5</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class = "context">
+		<h3>1. HTML & CSS & JavaScript</h3>
+		<p>- HTML : 웹 페이지의 내용을 작성</p>
+		<p>- CSS : 웹 페이지의 모양 및 스타일을 지정</p>
+		<p>- HTML : 웹 페이지의 기능 및 동작을 지정</p>
+		
+	</div>
+
+</body>
+
+</html>
