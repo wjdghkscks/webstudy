@@ -11,21 +11,12 @@
 <style type="text/css">
 
 /* 초기화 */
-	* {
-		margin: 10px;
-	}
-	body {
-		font-family: GmarketSansLight;
-	}
-	li {
-		list-style: none;
-	}
-	a {
-		text-decoration: none;
-	}
-	img {
-		border: 0;
-	}
+	* { margin: 15px; }
+	body { font-family: GmarketSansLight; }
+	li { list-style: none; }
+	a { text-decoration: none; }
+	img { border: 0; }
+	p { font-size: 15px; }
 
 /* 웹 폰트 */
 	@font-face {
@@ -47,31 +38,16 @@
 	
 /* 헤더 */
 	.header {
-		/* 중앙 정렬 */
-		margin: 0 auto;
-		
-		/* 절대 좌표 */
-		height: 200px;
-		position: relative;
+		margin: 10px 0 80px 0;
 	}
 
 	.title {
 		font-family: 'GmarketSansBold';
-		position: relative;
 		text-align: center;
-	}
-	
-	.nav {
-		position: relative;
-		text-align: right;
-		right: 0;
-		bottom: 10px;
 	}
 	
 	.context {
 		font-family: 'GmarketSansLight';
-		width: 500px;
-		margin: 10px 30px;
 	}
 	
 	
@@ -85,24 +61,30 @@
 		<div class = "title">
 			<h1>HTML SUMMARY</h1>
 		</div>
-		
-		<nav class = "nav">
-			<ul>
-				<li><a href="#">nav1</a></li>
-				<li><a href="#">nav2</a></li>
-				<li><a href="#">nav3</a></li>
-				<li><a href="#">nav4</a></li>
-				<li><a href="#">nav5</a></li>
-			</ul>
-		</nav>
 	</header>
 	
 	<div class = "context">
 		<h3>1. HTML & CSS & JavaScript</h3>
-		<p>- HTML : 웹 페이지의 내용을 작성</p>
-		<p>- CSS : 웹 페이지의 모양 및 스타일을 지정</p>
-		<p>- HTML : 웹 페이지의 기능 및 동작을 지정</p>
-		
+		<div>
+			<h4>1) HTML : 웹 페이지의 내용을 작성</h4>
+				<p>
+				- HyperText : 웹 페이지의 특정 부분과 연결이 가능한 텍스트 <br>
+				- Mark-up Language : 정보를 구조적, 계층적으로 표현할 수 있는 언어
+				</p>
+			<h4>2) CSS : 웹 페이지의 모양 및 스타일을 지정</h4>
+			<h4>3) HTML : 웹 페이지의 기능 및 동작을 지정</h4>
+		</div>
+		<br>
+		<h3>2. HTML elements</h3>
+		<div>
+			<h4>1) HTML 요소 : 태그</h4>
+			<h4>2) 브라우저 : HTML 문서 상의 태그를 해석하여, 그 내용을 표시하는 프로그램</h4>
+			<h4>3) 구성 </h4>
+				<b> <시작태그> content <끝태그>
+				<p>
+				- 끝태그가 없는 '빈 태그'도 존재하며, 특수한 용도로 사용됨
+				</p>
+		</div>
 	</div>
 
 </body>
